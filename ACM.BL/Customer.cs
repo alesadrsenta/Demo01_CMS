@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,6 +34,8 @@ namespace CMS.BusinessLayer
         }
         public string FirstName { get; set; }
         public string EmailAddress { get; set; }
+        public Address HomeAddress { get; set; }
+        public Address WorkAddress { get; set; }
         public int CustomerId { get; private set; }
         public string FullName
         {

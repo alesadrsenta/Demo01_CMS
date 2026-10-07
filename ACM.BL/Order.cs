@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +17,9 @@ namespace ACM.BL
         {
             this.OrderId = orderId;
         }
+        public Customer Customer { get; set; }
         public DateTimeOffset? OrderDate { get; set; }
+        public Address ShippingAddress { get; set; }
         public int OrderId { get; private set; }
 
         /// <summary>
